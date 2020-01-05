@@ -8,37 +8,37 @@ Install dependencies with `mix deps.get`.
 
 Then `iex -S mix` and paste your input followed by ⏎
 
-### Examples
+## Examples
 
-* Example a *
+### Example a
 
-  PLACE 0,0,NORTH
-  MOVE
-  REPORT
+```
+PLACE 0,0,NORTH
+MOVE
+REPORT
+```
 
-Expected output:
+Expected output: `0,1,NORTH`
 
-  0,1,NORTH
+### Example b
 
-* Example b *
+```
+PLACE 0,0,NORTH
+LEFT
+REPORT
+```
 
-  PLACE 0,0,NORTH
-  LEFT
-  REPORT
+Expected output: `0,0,WEST`
 
-Expected output:
+### Example c
 
-  0,0,WEST
+```
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+```
 
-* Example c *
-
-  PLACE 1,2,EAST
-  MOVE
-  MOVE
-  LEFT
-  MOVE
-  REPORT
-
-Expected output
-
-  3,3,NORTH
+Expected output: `3,3,NORTH`
